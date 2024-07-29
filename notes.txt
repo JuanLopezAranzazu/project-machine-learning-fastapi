@@ -1,0 +1,31 @@
+git clone
+
+Entorno Virtual
+
+python -m venv .venv
+.venv/Scripts/activate
+
+Instalar dependencias
+
+pip install -r requirements.txt
+
+devDependencies
+
+dependencies
+
+pip install fastapi
+pip install uvicorn
+pip install scikit-learn
+pip install joblib
+pip install pillow
+pip install numpy
+
+RUN APP
+
+uvicorn app.main:app --reload
+uvicorn app.main:app --reload --port 8080
+
+CREAR MODELO ML
+
+python ./app/ml.py
+
